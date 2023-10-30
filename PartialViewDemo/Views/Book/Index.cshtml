@@ -1,0 +1,9 @@
+﻿@model IEnumerable<PartialViewDemo.Models.Book>
+@*
+    we sent the book list from index action from controller
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@* need to call partial page on the index page *@
+@Html.Partial("_BookList",Model)
